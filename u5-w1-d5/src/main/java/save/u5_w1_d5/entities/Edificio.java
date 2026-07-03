@@ -25,6 +25,7 @@ public class Edificio {
     public Long getId() {
         return id;
     }
+
     public String getNome() {
         return nome;
     }

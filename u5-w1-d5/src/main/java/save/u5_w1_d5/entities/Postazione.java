@@ -31,7 +31,7 @@ public class Postazione {
         this.edificio = edificio;
     }
 
-    // Getter e Setter
+
     public Long getId() {
         return id;
     }
@@ -44,7 +44,9 @@ public class Postazione {
         return descrizione;
     }
 
-    public TipoPostazione getTipo() { return tipo; }
+    public TipoPostazione getTipo() {
+        return tipo;
+    }
 
     public int getMaxOccupanti() {
         return maxOccupanti;
