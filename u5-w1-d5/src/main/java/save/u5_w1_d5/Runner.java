@@ -35,12 +35,12 @@ public class Runner implements CommandLineRunner {
         LocalDate domani = LocalDate.now().plusDays(1);
         prenotazioneLogica.prenota(u1, p1, domani);
 
-        // Proviamo a fare una seconda prenotazione (ERRORE)
+        //Seconda prenotazione (ERRORE)
         prenotazioneLogica.prenota(u1, p1, domani);
 
         List<Postazione> ufficiMilano = postazioneLogica.cercaPostazione(TipoPostazione.UFFICIO, "Piacenza");
         System.out.println("Postazioni trovate: " + ufficiMilano.size());
 
-        System.out.println("Tutto funziona!");
+        System.out.println("Le logiche funzionano!");
     }
 }

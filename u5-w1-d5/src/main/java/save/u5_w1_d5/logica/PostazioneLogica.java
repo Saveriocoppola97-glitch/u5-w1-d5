@@ -23,7 +23,7 @@ public class PostazioneLogica {
 
     public List<Postazione> cercaPostazione(TipoPostazione tipo, String citta) {
         try {
-            return repo.findByTipoAndEdificioCitta(tipo, citta);
+            return repo.findByTipo(tipo, citta);
         } catch (DataAccessException ex) {
             System.err.println("Errore X ricerca: " + ex.getMessage());
             return List.of();

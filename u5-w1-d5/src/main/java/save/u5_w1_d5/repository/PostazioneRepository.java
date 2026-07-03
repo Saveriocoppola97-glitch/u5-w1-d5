@@ -8,5 +8,5 @@ import java.util.List;
 
 @Repository
 public interface PostazioneRepository extends JpaRepository<Postazione, Long> {
-    List<Postazione> findByTipoAndEdificioCitta(TipoPostazione tipo, String citta);
+    List<Postazione> findByTipo(TipoPostazione tipo, String citta);
 }

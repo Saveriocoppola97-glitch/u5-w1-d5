@@ -13,11 +13,11 @@ public class PrenotazioneLogica {
 
     public void prenota(Utente utente, Postazione postazione, LocalDate data) {
         try {
-            if (repo.existsByUtenteAndDataPrenotazione(utente, data)) {
+            if (repo.existsUtenteAndPrenotazione(utente, data)) {
                 System.out.println("Errore: L'utente ha già una prenotazione.");
                 return;
             }
-            if (repo.existsByPostazioneAndDataPrenotazione(postazione, data)) {
+            if (repo.existsPostazioneAndPrenotazione(postazione, data)) {
                 System.out.println("Errore: postazione già occupata");
                 return;
             }

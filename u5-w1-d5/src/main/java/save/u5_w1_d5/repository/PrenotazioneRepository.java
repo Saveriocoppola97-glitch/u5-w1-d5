@@ -7,6 +7,6 @@ import java.time.LocalDate;
 
 @Repository
 public interface PrenotazioneRepository extends JpaRepository<Prenotazione, Long> {
-    boolean existsByUtenteAndDataPrenotazione(Utente utente, LocalDate data);
-    boolean existsByPostazioneAndDataPrenotazione(Postazione postazione, LocalDate data);
+    boolean existsUtenteAndPrenotazione(Utente utente, LocalDate data);
+    boolean existsPostazioneAndPrenotazione(Postazione postazione, LocalDate data);
 }
